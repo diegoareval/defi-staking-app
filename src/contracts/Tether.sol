@@ -47,7 +47,7 @@ contract Tether {
         balanceOf[_to] += _value;
         allowance[msg.sender][_from] -= _value;
         emit Transfer(msg.sender, _to, _value);
-
+        return true;
     }
 
 }
